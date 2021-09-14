@@ -2,18 +2,18 @@
 <%- include("partials/header"); -%>
 
 
-    <h1><%=title%></h1>
-    <p><%=content%></p>
+    <h1 class="post-heading"><%=title%></h1>
+    <p class="post-content"><%=content%></p>
     <hr>
-    <h3>Add Comment</h3>
+    <h3 class="post-heading">Add Comment</h3>
     <form class="" action="/posts/<%=idd%>" method="post">
       <div class="form-group">
         <label>Name</label>
         <input class="form-control" type="text" name="commentTitle">
-        <label>Comment</label>
+        <label class="label-heading">Comment</label>
         <textarea class="form-control" name="commentBody" rows="2" cols="10"></textarea>
       </div>
-      <button class="btn btn-primary" type="submit" name="button">Publish</button>
+      <button class="btn btn-success" type="submit" name="button">Publish</button>
     </form>
     <hr>
     <%revs.forEach(function(rev){%>
